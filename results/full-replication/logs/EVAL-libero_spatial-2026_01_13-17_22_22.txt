@@ -1,0 +1,121 @@
+Evaluation Run ID: EVAL-libero_spatial-2026_01_13-17_22_22
+Task Suite: libero_spatial
+Checkpoint: openvla/openvla-7b-finetuned-libero-spatial
+Seed: 2048
+Center Crop: True
+Num Trials per Task: 5
+================================================================================
+
+
+Task 1/10: pick up the black bowl between the plate and the ramekin and place it on the plate
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+Success
+
+  Episode 2: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=2--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+Success
+
+  Episode 3: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=3--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+Success
+
+  Episode 4: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=4--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+Success
+
+  Episode 5: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=5--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4
+Success
+
+  Task Success Rate: 100.0% (5/5)
+  Total Success Rate: 100.0% (5/5)
+
+Task 2/10: pick up the black bowl next to the ramekin and place it on the plate
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=6--success=False--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+Failed
+
+  Episode 2: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=7--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+Success
+
+  Episode 3: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=8--success=False--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+Failed
+
+  Episode 4: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=9--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+Success
+
+  Episode 5: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=10--success=True--task=pick_up_the_black_bowl_next_to_the_ramekin_and_pla.mp4
+Success
+
+  Task Success Rate: 60.0% (3/5)
+  Total Success Rate: 80.0% (8/10)
+
+Task 3/10: pick up the black bowl from table center and place it on the plate
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=11--success=False--task=pick_up_the_black_bowl_from_table_center_and_place.mp4
+Failed
+
+  Episode 2: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=12--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4
+Success
+
+  Episode 3: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=13--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4
+Success
+
+  Episode 4: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=14--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4
+Success
+
+  Episode 5: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=15--success=True--task=pick_up_the_black_bowl_from_table_center_and_place.mp4
+Success
+
+  Task Success Rate: 80.0% (4/5)
+  Total Success Rate: 80.0% (12/15)
+
+Task 4/10: pick up the black bowl on the cookie box and place it on the plate
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=16--success=False--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4
+Failed
+
+  Episode 2: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=17--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4
+Success
+
+  Episode 3: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=18--success=False--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4
+Failed
+
+  Episode 4: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=19--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4
+Success
+
+  Episode 5: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=20--success=True--task=pick_up_the_black_bowl_on_the_cookie_box_and_place.mp4
+Success
+
+  Task Success Rate: 60.0% (3/5)
+  Total Success Rate: 75.0% (15/20)
+
+Task 5/10: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=21--success=True--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4
+Success
+
+  Episode 2: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=22--success=False--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4
+Failed
+
+  Episode 3: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=23--success=False--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4
+Failed
+
+  Episode 4: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=24--success=False--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4
+Failed
+
+  Episode 5: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-17_22_22--episode=25--success=True--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4
+Success
+
+  Task Success Rate: 40.0% (2/5)
+  Total Success Rate: 68.0% (17/25)
+
+================================================================================
+EVALUATION COMPLETE
+================================================================================
+Total Episodes: 25
+Total Successes: 17
+Overall Success Rate: 68.0%
+================================================================================

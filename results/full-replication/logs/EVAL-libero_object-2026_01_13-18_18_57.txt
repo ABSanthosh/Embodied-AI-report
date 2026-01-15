@@ -1,0 +1,121 @@
+Evaluation Run ID: EVAL-libero_object-2026_01_13-18_18_57
+Task Suite: libero_object
+Checkpoint: openvla/openvla-7b-finetuned-libero-object
+Seed: 2048
+Center Crop: True
+Num Trials per Task: 5
+================================================================================
+
+
+Task 1/5: pick up the alphabet soup and place it in the basket
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=1--success=False--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.mp4
+Failed
+
+  Episode 2: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=2--success=True--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.mp4
+Success
+
+  Episode 3: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=3--success=True--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.mp4
+Success
+
+  Episode 4: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=4--success=True--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.mp4
+Success
+
+  Episode 5: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=5--success=True--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.mp4
+Success
+
+  Task Success Rate: 80.0% (4/5)
+  Total Success Rate: 80.0% (4/5)
+
+Task 2/5: pick up the cream cheese and place it in the basket
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=6--success=True--task=pick_up_the_cream_cheese_and_place_it_in_the_baske.mp4
+Success
+
+  Episode 2: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=7--success=True--task=pick_up_the_cream_cheese_and_place_it_in_the_baske.mp4
+Success
+
+  Episode 3: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=8--success=False--task=pick_up_the_cream_cheese_and_place_it_in_the_baske.mp4
+Failed
+
+  Episode 4: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=9--success=True--task=pick_up_the_cream_cheese_and_place_it_in_the_baske.mp4
+Success
+
+  Episode 5: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=10--success=True--task=pick_up_the_cream_cheese_and_place_it_in_the_baske.mp4
+Success
+
+  Task Success Rate: 80.0% (4/5)
+  Total Success Rate: 80.0% (8/10)
+
+Task 3/5: pick up the salad dressing and place it in the basket
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=11--success=False--task=pick_up_the_salad_dressing_and_place_it_in_the_bas.mp4
+Failed
+
+  Episode 2: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=12--success=False--task=pick_up_the_salad_dressing_and_place_it_in_the_bas.mp4
+Failed
+
+  Episode 3: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=13--success=True--task=pick_up_the_salad_dressing_and_place_it_in_the_bas.mp4
+Success
+
+  Episode 4: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=14--success=False--task=pick_up_the_salad_dressing_and_place_it_in_the_bas.mp4
+Failed
+
+  Episode 5: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=15--success=True--task=pick_up_the_salad_dressing_and_place_it_in_the_bas.mp4
+Success
+
+  Task Success Rate: 40.0% (2/5)
+  Total Success Rate: 66.7% (10/15)
+
+Task 4/5: pick up the bbq sauce and place it in the basket
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=16--success=True--task=pick_up_the_bbq_sauce_and_place_it_in_the_basket.mp4
+Success
+
+  Episode 2: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=17--success=False--task=pick_up_the_bbq_sauce_and_place_it_in_the_basket.mp4
+Failed
+
+  Episode 3: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=18--success=True--task=pick_up_the_bbq_sauce_and_place_it_in_the_basket.mp4
+Success
+
+  Episode 4: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=19--success=False--task=pick_up_the_bbq_sauce_and_place_it_in_the_basket.mp4
+Failed
+
+  Episode 5: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=20--success=True--task=pick_up_the_bbq_sauce_and_place_it_in_the_basket.mp4
+Success
+
+  Task Success Rate: 60.0% (3/5)
+  Total Success Rate: 65.0% (13/20)
+
+Task 5/5: pick up the ketchup and place it in the basket
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=21--success=True--task=pick_up_the_ketchup_and_place_it_in_the_basket.mp4
+Success
+
+  Episode 2: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=22--success=True--task=pick_up_the_ketchup_and_place_it_in_the_basket.mp4
+Success
+
+  Episode 3: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=23--success=True--task=pick_up_the_ketchup_and_place_it_in_the_basket.mp4
+Success
+
+  Episode 4: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=24--success=True--task=pick_up_the_ketchup_and_place_it_in_the_basket.mp4
+Success
+
+  Episode 5: Saved rollout MP4 at path ./results/rollouts/2026_01_13/2026_01_13-18_18_57--episode=25--success=False--task=pick_up_the_ketchup_and_place_it_in_the_basket.mp4
+Failed
+
+  Task Success Rate: 80.0% (4/5)
+  Total Success Rate: 68.0% (17/25)
+
+================================================================================
+EVALUATION COMPLETE
+================================================================================
+Total Episodes: 25
+Total Successes: 17
+Overall Success Rate: 68.0%
+================================================================================

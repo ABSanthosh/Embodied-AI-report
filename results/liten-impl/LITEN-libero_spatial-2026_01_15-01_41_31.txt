@@ -1,0 +1,111 @@
+LITEN Evaluation: libero_spatial
+Max Retries: 3
+Checkpoint: openvla/openvla-7b-finetuned-libero-spatial
+================================================================================
+
+
+Task 1/5: pick up the black bowl between the plate and the ramekin and place it on the plate
+
+  Episode 1:
+    Attempt 1: SUCCESS (75 steps)
+
+  Episode 2:
+    Attempt 1: TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2: SUCCESS (88 steps)
+
+  Episode 3:
+    Attempt 1: SUCCESS (85 steps)
+
+  Episode 4:
+    Attempt 1: SUCCESS (122 steps)
+
+  Episode 5:
+    Attempt 1: SUCCESS (70 steps)
+
+  Task Success: 100%
+
+Task 2/5: pick up the black bowl next to the ramekin and place it on the plate
+
+  Episode 1:
+    Attempt 1: SUCCESS (110 steps)
+
+  Episode 2:
+    Attempt 1: SUCCESS (115 steps)
+
+  Episode 3:
+    Attempt 1: SUCCESS (134 steps)
+
+  Episode 4:
+    Attempt 1: SUCCESS (121 steps)
+
+  Episode 5:
+    Attempt 1: SUCCESS (115 steps)
+
+  Task Success: 100%
+
+Task 3/5: pick up the black bowl from table center and place it on the plate
+
+  Episode 1:
+    Attempt 1: TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2: SUCCESS (126 steps)
+
+  Episode 2:
+    Attempt 1: SUCCESS (107 steps)
+
+  Episode 3:
+    Attempt 1: SUCCESS (104 steps)
+
+  Episode 4:
+    Attempt 1: SUCCESS (88 steps)
+
+  Episode 5:
+    Attempt 1: SUCCESS (107 steps)
+
+  Task Success: 100%
+
+Task 4/5: pick up the black bowl on the cookie box and place it on the plate
+
+  Episode 1:
+    Attempt 1: SUCCESS (77 steps)
+
+  Episode 2:
+    Attempt 1: SUCCESS (113 steps)
+
+  Episode 3:
+    Attempt 1: SUCCESS (83 steps)
+
+  Episode 4:
+    Attempt 1: SUCCESS (82 steps)
+
+  Episode 5:
+    Attempt 1: SUCCESS (88 steps)
+
+  Task Success: 100%
+
+Task 5/5: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+
+  Episode 1:
+    Attempt 1: SUCCESS (146 steps)
+
+  Episode 2:
+    Attempt 1: TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2: TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 3: SUCCESS (172 steps)
+
+  Episode 3:
+    Attempt 1: SUCCESS (145 steps)
+
+  Episode 4:
+    Attempt 1: TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2: TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 3: TIMEOUT: nearly completed, minor adjustment needed
+
+  Episode 5:
+    Attempt 1: TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2: SUCCESS (163 steps)
+
+  Task Success: 80%
+
+================================================================================
+Overall Success Rate: 96.0%
+Average Retries: 0.28

@@ -1,0 +1,410 @@
+{'task_suite': 'libero_spatial',
+ 'success_rate': 0.96,
+ 'avg_retries': 0.28,
+ 'per_task': [{'task': 'pick up the black bowl between the plate and the ramekin and place it on the plate',
+   'success_rate': 1.0,
+   'successes': 5},
+  {'task': 'pick up the black bowl next to the ramekin and place it on the plate',
+   'success_rate': 1.0,
+   'successes': 5},
+  {'task': 'pick up the black bowl from table center and place it on the plate',
+   'success_rate': 1.0,
+   'successes': 5},
+  {'task': 'pick up the black bowl on the cookie box and place it on the plate',
+   'success_rate': 1.0,
+   'successes': 5},
+  {'task': 'pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate',
+   'success_rate': 0.8,
+   'successes': 4}]}
+   
+{'task_suite': 'libero_object',
+ 'success_rate': 0.76,
+ 'avg_retries': 0.48,
+ 'per_task': [{'task': 'pick up the alphabet soup and place it in the basket',
+   'success_rate': 0.8,
+   'successes': 4},
+  {'task': 'pick up the cream cheese and place it in the basket',
+   'success_rate': 0.4,
+   'successes': 2},
+  {'task': 'pick up the salad dressing and place it in the basket',
+   'success_rate': 0.8,
+   'successes': 4},
+  {'task': 'pick up the bbq sauce and place it in the basket',
+   'success_rate': 0.8,
+   'successes': 4},
+  {'task': 'pick up the ketchup and place it in the basket',
+   'success_rate': 1.0,
+   'successes': 5}]}
+
+
+================ CLI output ==================
+ ✓ Configuration loaded
+  Device: cuda
+  LITEN Max Retries: 3
+✓ LITEN Reasoner initialized
+✓ Utility functions defined
+✓ LITEN episode runner defined
+
+================================================================================
+Running LITEN on libero_spatial...
+================================================================================
+
+================================================================================
+LITEN EVALUATION: libero_spatial
+Max Retries: 3
+================================================================================
+
+<frozen importlib._bootstrap>:530: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.15; use exec_module() instead
+Loading checkpoint shards: 100% 4/4 [00:01<00:00,  2.17it/s]✓ Loaded model from openvla/openvla-7b-finetuned-libero-spatial
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+────────────────────────────────────────────────────────────────────────────────
+Task 1/5: pick up the black bowl between the plate and the ramekin and place it on the plate
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is between two objects']...
+✓ Success! (75 steps)
+
+  Episode 2/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is between two objects']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is between two objects']...
+✓ Success! (88 steps)
+
+  Episode 3/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is between two objects']...
+✓ Success! (85 steps)
+
+  Episode 4/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is between two objects']...
+✓ Success! (122 steps)
+
+  Episode 5/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is between two objects']...
+✓ Success! (70 steps)
+
+  Task Success: 100% (5/5)
+
+────────────────────────────────────────────────────────────────────────────────
+Task 2/5: pick up the black bowl next to the ramekin and place it on the plate
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is adjacent to another object']...
+✓ Success! (110 steps)
+
+  Episode 2/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is adjacent to another object']...
+✓ Success! (115 steps)
+
+  Episode 3/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is adjacent to another object']...
+✓ Success! (134 steps)
+
+  Episode 4/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is adjacent to another object']...
+✓ Success! (121 steps)
+
+  Episode 5/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl is adjacent to another object']...
+✓ Success! (115 steps)
+
+  Task Success: 100% (5/5)
+
+────────────────────────────────────────────────────────────────────────────────
+Task 3/5: pick up the black bowl from table center and place it on the plate
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl at table center']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl at table center']...
+✓ Success! (126 steps)
+
+  Episode 2/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl at table center']...
+✓ Success! (107 steps)
+
+  Episode 3/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl at table center']...
+✓ Success! (104 steps)
+
+  Episode 4/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl at table center']...
+✓ Success! (88 steps)
+
+  Episode 5/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl at table center']...
+✓ Success! (107 steps)
+
+  Task Success: 100% (5/5)
+
+────────────────────────────────────────────────────────────────────────────────
+Task 4/5: pick up the black bowl on the cookie box and place it on the plate
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl on top of cookie box']...
+✓ Success! (77 steps)
+
+  Episode 2/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl on top of cookie box']...
+✓ Success! (113 steps)
+
+  Episode 3/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl on top of cookie box']...
+✓ Success! (83 steps)
+
+  Episode 4/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl on top of cookie box']...
+✓ Success! (82 steps)
+
+  Episode 5/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl on top of cookie box']...
+✓ Success! (88 steps)
+
+  Task Success: 100% (5/5)
+
+────────────────────────────────────────────────────────────────────────────────
+Task 5/5: pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl inside drawer']...
+✓ Success! (146 steps)
+
+  Episode 2/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl inside drawer']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl inside drawer']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 3/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl inside drawer']...
+✓ Success! (172 steps)
+
+  Episode 3/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl inside drawer']...
+✓ Success! (145 steps)
+
+  Episode 4/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl inside drawer']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl inside drawer']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 3/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl inside drawer']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+
+  Episode 5/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl inside drawer']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: black bowl (round, dark container)', 'LOCATION: bowl inside drawer']...
+✓ Success! (163 steps)
+
+  Task Success: 80% (4/5)
+
+================================================================================
+LITEN EVALUATION COMPLETE
+================================================================================
+Total Episodes: 25
+Total Successes: 24
+Overall Success Rate: 96.0%
+Average Retries: 0.28
+================================================================================
+
+✓ Log saved to: ./results/logs/LITEN-libero_spatial-2026_01_15-01_41_31.txt
+
+================================================================================
+Running LITEN on libero_object...
+================================================================================
+
+================================================================================
+LITEN EVALUATION: libero_object
+Max Retries: 3
+================================================================================
+
+config.json:  3.55k/? [00:00<00:00, 429kB/s]model.safetensors.index.json:  94.8k/? [00:00<00:00, 10.5MB/s]Downloading shards: 100% 4/4 [00:38<00:00,  8.59s/it]model-00001-of-00004.safetensors: 100% 4.93G/4.93G [00:09<00:00, 317MB/s]model-00002-of-00004.safetensors: 100% 4.95G/4.95G [00:12<00:00, 375MB/s]model-00003-of-00004.safetensors: 100% 4.95G/4.95G [00:12<00:00, 435MB/s]model-00004-of-00004.safetensors: 100% 263M/263M [00:01<00:00, 194MB/s]Loading checkpoint shards: 100% 4/4 [00:01<00:00,  2.22it/s]generation_config.json: 100% 136/136 [00:00<00:00, 18.0kB/s]preprocessor_config.json:  1.69k/? [00:00<00:00, 219kB/s]tokenizer_config.json:  1.21k/? [00:00<00:00, 149kB/s]tokenizer.model: 100% 500k/500k [00:00<00:00, 767kB/s]tokenizer.json:  1.84M/? [00:00<00:00, 77.4MB/s]added_tokens.json: 100% 21.0/21.0 [00:00<00:00, 2.76kB/s]special_tokens_map.json: 100% 552/552 [00:00<00:00, 77.3kB/s]✓ Loaded model from openvla/openvla-7b-finetuned-libero-object
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+────────────────────────────────────────────────────────────────────────────────
+Task 1/5: pick up the alphabet soup and place it in the basket
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: soup can (cylindrical container)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: soup can (cylindrical container)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 3/3...       Affordance hints: ['TARGET: soup can (cylindrical container)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+
+  Episode 2/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: soup can (cylindrical container)', 'GRASP: stable grip on accessible surface']...
+✓ Success! (208 steps)
+
+  Episode 3/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: soup can (cylindrical container)', 'GRASP: stable grip on accessible surface']...
+✓ Success! (140 steps)
+
+  Episode 4/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: soup can (cylindrical container)', 'GRASP: stable grip on accessible surface']...
+✓ Success! (230 steps)
+
+  Episode 5/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: soup can (cylindrical container)', 'GRASP: stable grip on accessible surface']...
+✓ Success! (162 steps)
+
+  Task Success: 80% (4/5)
+
+────────────────────────────────────────────────────────────────────────────────
+Task 2/5: pick up the cream cheese and place it in the basket
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 3/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+
+  Episode 2/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✓ Success! (132 steps)
+
+  Episode 3/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 3/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+
+  Episode 4/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 3/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+
+  Episode 5/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: cream cheese box (rectangular)', 'GRASP: stable grip on accessible surface']...
+✓ Success! (129 steps)
+
+  Task Success: 40% (2/5)
+
+────────────────────────────────────────────────────────────────────────────────
+Task 3/5: pick up the salad dressing and place it in the basket
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: salad dressing bottle', 'GRASP: grip bottle body at middle']...
+✓ Success! (136 steps)
+
+  Episode 2/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: salad dressing bottle', 'GRASP: grip bottle body at middle']...
+✓ Success! (169 steps)
+
+  Episode 3/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: salad dressing bottle', 'GRASP: grip bottle body at middle']...
+✓ Success! (148 steps)
+
+  Episode 4/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: salad dressing bottle', 'GRASP: grip bottle body at middle']...
+✓ Success! (169 steps)
+
+  Episode 5/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: salad dressing bottle', 'GRASP: grip bottle body at middle']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: salad dressing bottle', 'GRASP: grip bottle body at middle']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 3/3...       Affordance hints: ['TARGET: salad dressing bottle', 'GRASP: grip bottle body at middle']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+
+  Task Success: 80% (4/5)
+
+────────────────────────────────────────────────────────────────────────────────
+Task 4/5: pick up the bbq sauce and place it in the basket
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: BBQ sauce bottle', 'GRASP: grip bottle body at middle']...
+✓ Success! (124 steps)
+
+  Episode 2/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: BBQ sauce bottle', 'GRASP: grip bottle body at middle']...
+✓ Success! (224 steps)
+
+  Episode 3/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: BBQ sauce bottle', 'GRASP: grip bottle body at middle']...
+✓ Success! (137 steps)
+
+  Episode 4/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: BBQ sauce bottle', 'GRASP: grip bottle body at middle']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 2/3...       Affordance hints: ['TARGET: BBQ sauce bottle', 'GRASP: grip bottle body at middle']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+    Attempt 3/3...       Affordance hints: ['TARGET: BBQ sauce bottle', 'GRASP: grip bottle body at middle']...
+✗ TIMEOUT: nearly completed, minor adjustment needed
+
+  Episode 5/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: BBQ sauce bottle', 'GRASP: grip bottle body at middle']...
+✓ Success! (174 steps)
+
+  Task Success: 80% (4/5)
+
+────────────────────────────────────────────────────────────────────────────────
+Task 5/5: pick up the ketchup and place it in the basket
+────────────────────────────────────────────────────────────────────────────────
+
+  Episode 1/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: ketchup bottle (red, bottle shape)', 'GRASP: grip bottle body at middle']...
+✓ Success! (151 steps)
+
+  Episode 2/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: ketchup bottle (red, bottle shape)', 'GRASP: grip bottle body at middle']...
+✓ Success! (135 steps)
+
+  Episode 3/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: ketchup bottle (red, bottle shape)', 'GRASP: grip bottle body at middle']...
+✓ Success! (155 steps)
+
+  Episode 4/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: ketchup bottle (red, bottle shape)', 'GRASP: grip bottle body at middle']...
+✓ Success! (144 steps)
+
+  Episode 5/5:
+    Attempt 1/3...       Affordance hints: ['TARGET: ketchup bottle (red, bottle shape)', 'GRASP: grip bottle body at middle']...
+✓ Success! (143 steps)
+
+  Task Success: 100% (5/5)
+
+================================================================================
+LITEN EVALUATION COMPLETE
+================================================================================
+Total Episodes: 25
+Total Successes: 19
+Overall Success Rate: 76.0%
+Average Retries: 0.48
+================================================================================
+
+✓ Log saved to: ./results/logs/LITEN-libero_object-2026_01_15-02_34_29.txt
+
+================================================================================
+COMPARISON: BASELINE vs LITEN
+================================================================================
+
+Baseline Results (from your evaluation logs):
+  libero_spatial: 68.0% (17/25 episodes)
+  libero_object:  68.0% (17/25 episodes)
+
+LITEN Results:
+  libero_spatial: 96.0%
+    Avg retries: 0.28
+  libero_object:  76.0%
+    Avg retries: 0.48
+
+Improvement:
+  libero_spatial: +28.0%
+  libero_object:  +8.0%
+================================================================================
