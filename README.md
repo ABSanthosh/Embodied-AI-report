@@ -2,22 +2,22 @@
 
 This repository contains research on improving generalization in robotic manipulation through vision-language-action (VLA) models. The work focuses on replicating state-of-the-art results with OpenVLA and implementing inference-time improvements inspired by LITEN (Learning from Inference-Time Execution).
 
-## Demo Videos
+## Demo imgs
 
 ### Successful Executions
 
 <table>
 <tr>
 <td width="33%">
-<video src="./results/full-replication/rollouts/2026_01_13-17_22_22--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4" controls loop></video>
+<img src="./assets/2026_01_13-17_22_22--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.gif" controls loop></img>
 <p align="center"><em>Pick up bowl between plate and ramekin</em></p>
 </td>
 <td width="33%">
-<video src="./results/full-replication/rollouts/2026_01_13-18_18_57--episode=2--success=True--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.mp4" controls loop></video>
+<img src="./assets/2026_01_13-18_18_57--episode=2--success=True--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.gif" controls loop></img>
 <p align="center"><em>Pick up alphabet soup and place in basket</em></p>
 </td>
 <td width="33%">
-<video src="./results/liten-impl/rollouts/LITEN-2026_01_15-01_41_31-ep5-ok.mp4" controls loop></video>
+<img src="./assets/LITEN-2026_01_15-01_41_31-ep5-ok.gif" controls loop></img>
 <p align="center"><em>LITEN: Successful execution with retries</em></p>
 </td>
 </tr>
@@ -28,15 +28,15 @@ This repository contains research on improving generalization in robotic manipul
 <table>
 <tr>
 <td width="33%">
-<video src="./results/full-replication/rollouts/2026_01_13-17_22_22--episode=22--success=False--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4" controls loop></video>
+<img src="./assets/2026_01_13-17_22_22--episode=22--success=False--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.gif" controls loop></img>
 <p align="center"><em>Drawer manipulation failure</em></p>
 </td>
 <td width="33%">
-<video src="./results/full-replication/rollouts/2026_01_13-18_18_57--episode=11--success=False--task=pick_up_the_salad_dressing_and_place_it_in_the_bas.mp4" controls loop></video>
+<img src="./assets/2026_01_13-18_18_57--episode=11--success=False--task=pick_up_the_salad_dressing_and_place_it_in_the_bas.gif" controls loop></img>
 <p align="center"><em>Salad dressing placement failure</em></p>
 </td>
 <td width="33%">
-<video src="./results/liten-impl/rollouts/LITEN-2026_01_15-01_41_31-ep24-fail.mp4" controls loop></video>
+<img src="./assets/LITEN-2026_01_15-01_41_31-ep24-fail.gif" controls loop></img>
 <p align="center"><em>LITEN: Failed after 3 retry attempts</em></p>
 </td>
 </tr>
@@ -64,14 +64,17 @@ This investigation specifically focuses on cross-task generalization within robo
 OpenVLA is a 7-billion parameter vision-language-action model that extends pretrained vision-language backbones to output robot actions. Key architectural components:
 
 **Dual Vision Encoders:**
+
 - **SigLIP**: Trained on 400M image-text pairs for semantic understanding
 - **DINOv2**: Self-supervised encoder for spatial precision
 
 **Language-Conditioned Transformer:**
+
 - Llama-2-based backbone processes visual features with natural language instructions
 - Enables understanding of complex manipulation commands
 
 **Action Tokenization:**
+
 - Discretizes 7-DoF robot actions into 256 bins per dimension
 - Leverages transformer's sequence modeling for action generation
 
@@ -96,6 +99,7 @@ This approach enables recovery from transient failures without requiring model r
 **Evaluation Scope:** 5 episodes per task (reduced from 50 in original paper)
 
 **Benchmark Suites:**
+
 - `libero_spatial`: Tests generalization to novel spatial configurations
 - `libero_object`: Tests generalization to different object categories
 
@@ -103,19 +107,19 @@ This approach enables recovery from transient failures without requiring model r
 
 ### Baseline OpenVLA Performance
 
-| Task Suite | Success Rate | Episodes |
-|-----------|--------------|----------|
-| libero_spatial | 68.0% | 17/25 |
-| libero_object | 68.0% | 17/25 |
-| **Average** | **68.0%** | **34/50** |
+| Task Suite     | Success Rate | Episodes  |
+| -------------- | ------------ | --------- |
+| libero_spatial | 68.0%        | 17/25     |
+| libero_object  | 68.0%        | 17/25     |
+| **Average**    | **68.0%**    | **34/50** |
 
 ### LITEN with Retry Mechanism
 
-| Task Suite | Baseline | LITEN | Improvement |
-|-----------|----------|-------|-------------|
-| libero_spatial | 68.0% | 96.0% | +28.0% |
-| libero_object | 68.0% | 76.0% | +8.0% |
-| **Average** | **68.0%** | **86.0%** | **+18.0%** |
+| Task Suite     | Baseline  | LITEN     | Improvement |
+| -------------- | --------- | --------- | ----------- |
+| libero_spatial | 68.0%     | 96.0%     | +28.0%      |
+| libero_object  | 68.0%     | 76.0%     | +8.0%       |
+| **Average**    | **68.0%** | **86.0%** | **+18.0%**  |
 
 ### Key Statistics
 
@@ -194,11 +198,13 @@ Failure mode assessment based on execution progress:
 ## Limitations and Future Work
 
 **Current Limitations:**
+
 - Reduced evaluation scale (5 vs. 50 episodes per task)
 - Simplified LITEN without full VLM-based reasoning
 - Rule-based affordance hints instead of GPT-4V/Claude analysis
 
 **Future Directions:**
+
 - Integrate external VLM for video-based failure analysis
 - Implement action trajectory smoothing (temporal ensembling)
 - Explore real-time chunking for eliminating prediction discontinuities
