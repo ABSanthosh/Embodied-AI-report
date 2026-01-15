@@ -9,15 +9,15 @@ This repository contains research on improving generalization in robotic manipul
 <table>
 <tr>
 <td width="33%">
-<video src="https://github.com/ABSanthosh/Embodied-AI-report/raw/main/results/full-replication/rollouts/2026_01_13-17_22_22--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4" controls loop></video>
+<video src="./results/full-replication/rollouts/2026_01_13-17_22_22--episode=1--success=True--task=pick_up_the_black_bowl_between_the_plate_and_the_r.mp4" controls loop></video>
 <p align="center"><em>Pick up bowl between plate and ramekin</em></p>
 </td>
 <td width="33%">
-<video src="https://github.com/ABSanthosh/Embodied-AI-report/raw/main/results/full-replication/rollouts/2026_01_13-18_18_57--episode=2--success=True--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.mp4" controls loop></video>
+<video src="./results/full-replication/rollouts/2026_01_13-18_18_57--episode=2--success=True--task=pick_up_the_alphabet_soup_and_place_it_in_the_bask.mp4" controls loop></video>
 <p align="center"><em>Pick up alphabet soup and place in basket</em></p>
 </td>
 <td width="33%">
-<video src="https://github.com/ABSanthosh/Embodied-AI-report/raw/main/results/liten-impl/rollouts/LITEN-2026_01_15-01_41_31-ep5-ok.mp4" controls loop></video>
+<video src="./results/liten-impl/rollouts/LITEN-2026_01_15-01_41_31-ep5-ok.mp4" controls loop></video>
 <p align="center"><em>LITEN: Successful execution with retries</em></p>
 </td>
 </tr>
@@ -28,15 +28,15 @@ This repository contains research on improving generalization in robotic manipul
 <table>
 <tr>
 <td width="33%">
-<video src="https://github.com/ABSanthosh/Embodied-AI-report/raw/main/results/full-replication/rollouts/2026_01_13-17_22_22--episode=22--success=False--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4" controls loop></video>
+<video src="./results/full-replication/rollouts/2026_01_13-17_22_22--episode=22--success=False--task=pick_up_the_black_bowl_in_the_top_drawer_of_the_wo.mp4" controls loop></video>
 <p align="center"><em>Drawer manipulation failure</em></p>
 </td>
 <td width="33%">
-<video src="https://github.com/ABSanthosh/Embodied-AI-report/raw/main/results/full-replication/rollouts/2026_01_13-18_18_57--episode=11--success=False--task=pick_up_the_salad_dressing_and_place_it_in_the_bas.mp4" controls loop></video>
+<video src="./results/full-replication/rollouts/2026_01_13-18_18_57--episode=11--success=False--task=pick_up_the_salad_dressing_and_place_it_in_the_bas.mp4" controls loop></video>
 <p align="center"><em>Salad dressing placement failure</em></p>
 </td>
 <td width="33%">
-<video src="https://github.com/ABSanthosh/Embodied-AI-report/raw/main/results/liten-impl/rollouts/LITEN-2026_01_15-01_41_31-ep24-fail.mp4" controls loop></video>
+<video src="./results/liten-impl/rollouts/LITEN-2026_01_15-01_41_31-ep24-fail.mp4" controls loop></video>
 <p align="center"><em>LITEN: Failed after 3 retry attempts</em></p>
 </td>
 </tr>
